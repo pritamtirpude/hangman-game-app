@@ -1,54 +1,127 @@
-# React + TypeScript + Vite
+# 🎮 Hangman Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive implementation of the classic Hangman word guessing game with multiple categories and an engaging user interface.
 
-Currently, two official plugins are available:
+![Game Preview](public/screen-one.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- 🎯 Multiple word categories (Movies, TV Shows, Countries, and more)
+- 🎨 Beautiful, responsive UI that works on all devices
+- 🔊 Engaging sound effects for interactions
+- 🌓 Smooth animations and transitions
+- 📱 Progressive Web App (PWA) support
+- 🎮 Keyboard and mouse/touch input support
+- 💾 Offline playability
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Live Demo
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+[Play the Game](https://hangman-game-app-six.vercel.app/hangmangame) <!-- Replace with your deployed URL -->
+
+## 🛠️ Built With
+
+- React + TypeScript
+- Vite
+- TailwindCSS
+- Zustand (State Management)
+- Motion (Animations)
+- PWA Support
+
+## 📥 Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/pritamtirpude/hangman-game-app.git
+cd hangman-game
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Install dependencies:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm install
 ```
+
+3. Start the development server:
+
+```bash
+npm run dev
+```
+
+4. Build for production:
+
+```bash
+npm run build
+```
+
+## 🎯 How to Play
+
+1. Select a category from the available options
+2. Guess the hidden word by selecting letters
+3. You have 10 chances to guess the word correctly
+4. The game shows your remaining lives with a progress bar
+5. Win by guessing all letters or lose when you run out of lives
+
+## 📱 PWA Features
+
+- Installable on desktop and mobile devices
+- Works offline
+- Caches assets for faster loading
+- Auto-updates when new content is available
+
+## 🎨 Game Categories
+
+- 🎬 Movies
+- 📺 TV Shows
+- 🌍 Countries
+- 🏛️ Capital Cities
+- 🐾 Animals
+- ⚽ Sports
+
+## 🔧 Development
+
+### Project Structure
+
+```
+src/
+  ├── components/      # Reusable UI components
+  ├── pages/          # Route pages
+  ├── store/          # Zustand store
+  ├── utils/          # Utility functions
+  └── data.json       # Game words database
+```
+
+### Key Features Implementation
+
+- **State Management**: Uses Zustand for managing game state
+- **Animations**: Implements Motion for smooth transitions
+- **Sound Effects**: Integrated with use-sound for audio feedback
+- **Responsive Design**: Tailwind CSS for adaptive layouts
+- **PWA**: Service worker and asset caching for offline use
+
+## 📄 License
+
+MIT License - feel free to use this project for learning or personal use.
+
+## 👏 Credits
+
+- Font: Mouse Memoirs by [Astigmatic]
+- Sound Effects: [[Source](https://mixkit.co/)]
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/yourusername/hangman-game/issues).
+
+## 📝 To-Do
+
+- [ ] Add more word categories
+- [ ] Implement difficulty levels
+- [ ] Add multiplayer support
+- [ ] Create leaderboard
+- [ ] Add more animations
+
+## 📞 Contact
+
+Pritam Tirpude - [@ptirpude1991](https://x.com/ptirpude1991) - pritam.tirpude9601l@gmail.com
+
+Project Link: [https://github.com/pritamtirpude/hangman-game-app](https://github.com/pritamtirpude/hangman-game-app)

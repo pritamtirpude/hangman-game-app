@@ -86,3 +86,11 @@ body {
 .game-bg {
   background: linear-gradient(rgb(254, 113, 254, 0.9), rgb(113, 153, 255, 0.9));
 }
+
+.modal-bg {
+  background: linear-gradient(
+    rgba(26, 4, 58, 0.75) 0%,
+    rgba(21, 18, 120, 0.75) 70.31%,
+    rgba(43, 22, 119, 0.75) 100%
+  );
+}

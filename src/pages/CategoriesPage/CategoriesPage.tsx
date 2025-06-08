@@ -18,7 +18,7 @@ const CategoriesPage = () => {
   const MotionLink = motion.create(Link);
   return (
     <div className="relative z-50">
-      <div className="fixed inset-0 -z-10 size-full bg-linear-to-b from-slate-900 via-violet-950 via-75% to-violet-950 opacity-75" />
+      <div className="modal-bg fixed inset-0 -z-10 size-full" />
       <CategoryAndInstructionHeader headertitle="Pick a Category" />
       <div className="z-30 mt-20 grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
         <AnimatePresence mode="popLayout">

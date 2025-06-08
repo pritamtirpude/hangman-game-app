@@ -57,7 +57,7 @@ const GamePage = () => {
 
   return (
     <div className="relative z-50 flex flex-col">
-      <div className="fixed inset-0 -z-10 size-full bg-linear-to-b from-slate-900 via-violet-950 via-75% to-violet-950 opacity-75" />
+      <div className="modal-bg fixed inset-0 -z-10 size-full opacity-75" />
       {/* Game Header */}
       <GameHeader />
 

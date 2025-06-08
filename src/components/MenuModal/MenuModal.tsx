@@ -37,7 +37,7 @@ const MenuModal = () => {
 
   return (
     <div className="fixed inset-0 flex min-h-screen flex-col items-center justify-center">
-      <div className="absolute size-full bg-linear-to-b from-slate-900 to-indigo-800 opacity-75 blur-[300px] transition-all duration-700" />
+      <div className="modal-bg absolute size-full" />
       <PopUpCard
         title={isWinner ? 'You Win' : isPaused ? 'Paused' : 'You Lose'}
         body={

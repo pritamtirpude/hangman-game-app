@@ -1,0 +1,88 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-dark-navy: hsl(250, 68%, 27%);
+  --color-hang-blue: hsl(223, 100%, 57%);
+
+  --text-heading-xl: 136px;
+  --text-heading-xl--letter-spacing: -0.5%;
+  --text-heading-xl--line-height: 120%;
+
+  --text-heading-l: 88px;
+  --text-heading-l--letter-spacing: 0%;
+  --text-heading-l--line-height: 120%;
+
+  --text-heading-m: 48px;
+  --text-heading-m--letter-spacing: 5%;
+  --text-heading-m--line-height: 120%;
+
+  --text-heading-s: 32px;
+  --text-heading-s--letter-spacing: 5%;
+  --text-heading-s--line-height: 120%;
+
+  --text-hang-body: 26px;
+  --text-hang-body--letter-spacing: 5%;
+  --text-hang-body--line-height: 120%;
+}
+
+@font-face {
+  font-family: 'Mouse Memoirs';
+  src: url('/fonts/MouseMemoirs-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Mouse Memoirs', sans-serif;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.pop-up-card {
+  background: linear-gradient(rgb(52, 74, 186, 0.9), rgb(0, 20, 121, 0.9));
+  box-shadow:
+    inset 0 -8px 0 4px #140e66,
+    inset 0 6px 0 8px #2463ff;
+}
+
+.play-button {
+  background: linear-gradient(rgb(254, 113, 254, 0.9), rgb(113, 153, 255, 0.9));
+  box-shadow:
+    inset 0 -4px 0 5px #243041,
+    inset 0 -12px 0 11px #9d2df5;
+}
+
+.how-to-play-button {
+  box-shadow:
+    inset 0 -2px 0 3px #140e66,
+    inset 0 1px 0 6px #3c74ff;
+}
+
+.back-button-play {
+  background: linear-gradient(rgb(254, 113, 254, 0.9), rgb(113, 153, 255, 0.9));
+  box-shadow: inset 0 -6px 0 7px rgb(157, 45, 245, 0.4);
+
+  @media (max-width: 768px) {
+    box-shadow: inset 0 -5px 0 -1px rgb(157, 45, 245, 0.4);
+  }
+}
+
+.quit-button {
+  box-shadow:
+    inset 0 -2px 0 3px #140e66,
+    inset 0 1px 0 6px #c642fb;
+}
+
+.header-title {
+  -webkit-text-stroke: 20px #243041;
+
+  @media (max-width: 768px) {
+    -webkit-text-stroke: 8px #243041;
+  }
+}
+
+.game-bg {
+  background: linear-gradient(rgb(254, 113, 254, 0.9), rgb(113, 153, 255, 0.9));
+}
